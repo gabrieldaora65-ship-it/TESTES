@@ -6,7 +6,7 @@ const app = express();
 app.use(bodyParser.json());
 
 // serviço externo que vai receber os dados (muda depois se quiser)
-const EXTERNAL_URL = process.env.EXTERNAL_URL || 'https://webhook.site/teste-gratis';
+const EXTERNAL_URL = process.env.EXTERNAL_URL || 'https://testes-3rwa.onrender.com';
 
 app.post('/ens', async (req, res) => {
   try {
